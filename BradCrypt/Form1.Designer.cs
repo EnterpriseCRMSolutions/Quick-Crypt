@@ -28,12 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textBoxMain = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // textBoxMain
+            // 
+            this.textBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxMain.Location = new System.Drawing.Point(0, 0);
+            this.textBoxMain.Multiline = true;
+            this.textBoxMain.Name = "textBoxMain";
+            this.textBoxMain.Size = new System.Drawing.Size(555, 295);
+            this.textBoxMain.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(555, 294);
+            this.Controls.Add(this.textBoxMain);
+            this.Name = "Form1";
+            this.Text = "Quick Cyrpt";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBoxMain;
     }
 }
 
